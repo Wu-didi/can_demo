@@ -28,7 +28,6 @@ def send_can_messages(angle, angle_speed, enable=1):
                 print("收到Esc键，退出程序")
                 auto_drive_allowed = False  # 确保退出时设置auto_drive_allowed为False
 
-
             # 只有当VCU允许并且手动触发过才允许进入自动驾驶模式
             if auto_drive_allowed and manual_triggered:
                 mode = 1  # 自动驾驶模式
